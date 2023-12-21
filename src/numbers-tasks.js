@@ -284,8 +284,16 @@ function getFibonacciNumber(index) {
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(/* n */) {
-  throw new Error('Not implemented');
+function getSumToN(n) {
+  let sum = 0;
+  let idx = 0;
+
+  while (idx <= n) {
+    sum += idx;
+    idx += 1;
+  }
+
+  return sum;
 }
 
 /**
